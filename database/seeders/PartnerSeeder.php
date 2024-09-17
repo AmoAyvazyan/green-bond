@@ -1,0 +1,336 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Partner;
+use Illuminate\Support\Facades\App;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class PartnerSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        $dataPartners = [
+            [
+                'name_en'       => '"Converse Bank" CJSC',
+                'name_hy'       => '«Կոնվերս Բանկ» ՓԲԸ',
+                'slug'          => 'conversebank',
+                'logo'          => asset('images/partners/converse.svg'),
+                'contact_email' => 'post@conversebank.am',
+                'contact_phone' => '+37410511211',
+                'address_en'    => '0010, Vazgen Sargsyan 26/1 Str.,Yerevan',
+                'address_hy'    => 'ք․Երևան, 0010, Վազգեն Սարգսյանի 26/1',
+                'url'           => 'https://www.conversebank.am/',
+            ],
+            [
+                'name_en'       => '"Armeconombank" CJSC',
+                'name_hy'       => '«Հայէկոնոմբանկ» ԲԲԸ',
+                'slug'          => 'armeconombank',
+                'logo'          => asset('images/partners/aeb.png'),
+                'contact_email' => 'bank@aeb.am',
+                'contact_phone' => '+37410510910',
+                'address_en'    => '0002, 23/1 Amiryan str., Yerevan',
+                'address_hy'    => 'ք․ Երևան, 0002, Ամիրյան 23/1',
+                'url'           => 'https://www.aeb.am/',
+            ],
+            [
+                'name_en'       => '"ACBA BANK" OJSC',
+                'name_hy'       => '«ԱԿԲԱ ԲԱՆԿ» ԲԲԸ',
+                'slug'          => 'acbabank',
+                'logo'          => asset('images/partners/acba.png'),
+                'contact_email' => 'acba@acba.am',
+                'contact_phone' => '+37410318888',
+                'address_en'    => '0002, Aram 82-84 str., Yerevan',
+                'address_hy'    => 'ք․ Երևան, 0002, Արամի 82-84',
+                'url'           => 'https://www.acba.am/',
+            ],
+            [
+                'name_en'       => '"Express Credit" UCO CJSC',
+                'name_hy'       => '«Էքսպես Կրեդիտ» ՈւՎԿ ՓԲԸ',
+                'slug'          => 'expressbank',
+                'logo'          => asset('images/partners/express_credit.png'),
+                'contact_email' => 'info@expresscredit.am',
+                'contact_phone' => '+37410572171',
+                'address_en'    => 'Charents str. 58/1, Yerevan',
+                'address_hy'    => 'ք.Երևան, Չարենցի 58/1',
+                'url'           => 'https://ecredit.am/',
+            ],
+            [
+                'name_en'       => '"Ameriabank " CJSC',
+                'name_hy'       => '«Ամերիաբանկ» ՓԲԸ',
+                'slug'          => 'ameriabank',
+                'logo'          => asset('images/partners/Ameriabank.svg'),
+                'contact_email' => 'info@ameriabank.am',
+                'contact_phone' => '+37410561111',
+                'address_en'    => '0010, Vazgen Sargsyan str. 2.',
+                'address_hy'    => 'ք. Երեւան, 0010, Վազգեն Սարգսյան 2',
+                'url'           => 'https://ameriabank.am/',
+            ],
+            [
+                'name_en'       => '"ID Bank" CJSC',
+                'name_hy'       => '«ԱյԴի Բանկ» ՓԲԸ',
+                'slug'          => 'idbank',
+                'logo'          => asset('images/partners/idbank.png'),
+                'contact_email' => 'info@idbank.am',
+                'contact_phone' => '+37410593333',
+                'address_en'    => '0010, Vardanants 13, Yerevan',
+                'address_hy'    => 'ք․ երևան, 0010, Վարդանանց 13',
+                'url'           => 'https://idbank.am/',
+            ],
+            [
+                'name_en'       => '"CARD AgroCredit " UCO CJSC',
+                'name_hy'       => '«ՔԱՐԴ ԱգրոԿրեդիտ» ՈւՎԿ ՓԲԸ',
+                'slug'          => 'agrocredit',
+                'logo'          => asset('images/partners/agro_credit.svg'),
+                'contact_email' => 'agrocredit@card.am',
+                'contact_phone' => '+37460440552',
+                'address_en'    => 'Azatutyan str. 1/21-40, Yerevan',
+                'address_hy'    => 'ՀՀ ք․ Երևան Ազատության 1/21-40',
+                'url'           => 'https://www.agrocredit.am/',
+            ],
+            [
+                'name_en'       => '"First Mortgage Company" UCO LLC',
+                'name_hy'       => '«Առաջին հիփոթեքային ընկերություն» ՈւՎԿ ՍՊԸ',
+                'slug'          => 'firstmortgage',
+                'logo'          => asset('images/partners/First_Mortgage_Company.png'),
+                'contact_email' => 'info@firstmortgage.am',
+                'contact_phone' => '+37410599904',
+                'address_en'    => '0010, 122 V. Sargsyan str., Yerevan',
+                'address_hy'    => 'ք․ Երևան, 0010, Վ. Սարգսյան թիվ 122',
+                'url'           => 'https://firstmortgage.am/',
+            ],
+            [
+                'name_en'       => '"ARARATBANK" OJSC',
+                'name_hy'       => '«ԱՐԱՐԱՏԲԱՆԿ» ԲԲԸ',
+                'slug'          => 'araratbank',
+                'logo'          => asset('images/partners/ararat_bank.png'),
+                'contact_email' => 'araratbank@araratbank.am',
+                'contact_phone' => '+37410546363',
+                'address_en'    => '0002, Pavstos Buzandi St., 87 Building, Area 85',
+                'address_hy'    => 'ք․ Երևան, 0002, Փավստոս Բուզանդի',
+                'url'           => 'https://www.araratbank.am/',
+            ],
+            [
+                'name_en'       => '"Ardshinbank" CJSC',
+                'name_hy'       => '«Արդշինբանկ» ՓԲԸ',
+                'slug'          => 'ardshinbank',
+                'logo'          => asset('images/partners/ardshinbank.png'),
+                'contact_email' => 'office@ashib.am',
+                'contact_phone' => '+37412222222',
+                'address_en'    => '0015, 13 Grigor Lusavorich, Yerevan',
+                'address_hy'    => 'ք․Երևան, 0015, Գրիգոր Լուսավորչի 13',
+                'url'           => 'https://www.ardshinbank.am/',
+            ],
+            [
+                'name_en'       => '"ArmSwissBank" CJSC',
+                'name_hy'       => '«Արմսվիսբանկ» ՓԲԸ',
+                'slug'          => 'armswissbank',
+                'logo'          => asset('images/partners/armswissbank.png'),
+                'contact_email' => 'info@armswissbank.am',
+                'contact_phone' => '+37410584419',
+                'address_en'    => '0010, V. Sargsyan 10, Yerevan',
+                'address_hy'    => '«Արմսվիսբանկ» ՓԲԸ',
+                'url'           => 'https://www.armswissbank.am/',
+            ],
+            [
+                'name_en'       => '"Artsakhbank" CJSC',
+                'name_hy'       => '«Արցախբանկ» ՓԲԸ',
+                'slug'          => 'artsakhbank',
+                'logo'          => asset('images/partners/artsakh_bank.svg'),
+                'contact_email' => 'info@artsakhbank.am',
+                'contact_phone' => '+37460747769',
+                'address_en'    => '0025, Charents 1b str., Yerevan',
+                'address_hy'    => 'ք․ Երևան, 0025, Չարենցի 1բ',
+                'url'           => 'https://www.artsakhbank.am/',
+            ],
+            [
+                'name_en'       => '"Byblos Bank Armenia" CJSC',
+                'name_hy'       => '«Բիբլոս Բանկ Արմենիա» ՓԲԸ',
+                'slug'          => 'byblosbank',
+                'logo'          => asset('images/partners/byblosbank.png'),
+                'contact_email' => 'info@byblosbankarmenia.am',
+                'contact_phone' => '+37410530362',
+                'address_en'    => '0002, 18/3 Amiryan Str., Yerevan',
+                'address_hy'    => 'ք․ Երևան, 0002, Ամիրյան 18/3',
+                'url'           => 'https://www.byblosbankarmenia.am/',
+            ],
+            [
+                'name_en'       => '"Global Credit" UCO CJSC',
+                'name_hy'       => '«Գլոբալ Կրեդիտ» ՈւՎԿ ՓԲԸ',
+                'slug'          => 'globalcredit',
+                'logo'          => asset('images/partners/global_credit.png'),
+                'contact_email' => 'info@globalcredit.am',
+                'contact_phone' => '+37410707010',
+                'address_en'    => 'S. Tsrer 2/251, Yerevan',
+                'address_hy'    => 'ք. Երևան, Սասնա Ծռեր 2, թիվ 251',
+                'url'           => 'https://www.globalcredit.am/',
+            ],
+            [
+                'name_en'       => 'HSBC Bank Armenia CJSC',
+                'name_hy'       => 'Էյչ-Էս-Բի-Սի Բանկ Հայաստան ՓԲԸ',
+                'slug'          => 'hsbcbank',
+                'logo'          => asset('images/partners/hsbc_bank.svg'),
+                'contact_email' => 'hsbc.armenia@hsbc.com',
+                'contact_phone' => '+37460655000',
+                'address_en'    => '66 Teryan street, Yerevan, 0009',
+                'address_hy'    => 'Տերյան փողոց 66, Երևան, ՀՀ,0009',
+                'url'           => 'https://www.hsbc.am/',
+            ],
+            [
+                'name_en'       => '"EVOCABANK" CJSC',
+                'name_hy'       => '«ԷՎՈԿԱԲԱՆԿ» ՓԲԸ',
+                'slug'          => 'evokabank',
+                'logo'          => asset('images/partners/evocabank.png'),
+                'contact_email' => 'hello@evokabank.am',
+                'contact_phone' => '+37410605555',
+                'address_en'    => '0010, 44/2 Hanrapetutyan Str.,Yerevan',
+                'address_hy'    => 'ք. Երեւան, Հանրապետության 44/2',
+                'url'           => 'https://www.evoca.am/',
+            ],
+            [
+                'name_en'       => '"Inecobank" CJSC',
+                'name_hy'       => '«Ինեկոբանկ» ՓԲԸ',
+                'slug'          => 'inecobank',
+                'logo'          => asset('images/partners/ineco_bank.svg'),
+                'contact_email' => 'inecobank@inecobank.am',
+                'contact_phone' => '+37410510510',
+                'address_en'    => '0001,17 Tumanyan Str., Yerevan',
+                'address_hy'    => 'ք․ Երևան, 0001, Թումանյան 17',
+                'url'           => 'https://www.inecobank.am/',
+            ],
+            [
+                'name_en'       => '"Kamurj" UCO LLC',
+                'name_hy'       => '«Կամուրջ» ՈւՎԿ ՍՊԸ',
+                'slug'          => 'kamurj',
+                'logo'          => asset('images/partners/kamurj.png'),
+                'contact_email' => 'info@kamurj.am',
+                'contact_phone' => '+374 11) 27 00 00',
+                'address_en'    => '0032, 123 Sebastia str., Yerevan',
+                'address_hy'    => 'ք. Երևան, 0032, Սեբաստիա 123',
+                'url'           => 'https://kamurj.am/',
+            ],
+            [
+                'name_en'       => '"AMIO BANK" CJSC',
+                'name_hy'       => '«ԱՄԻՕ ԲԱՆԿ» ՓԲԸ',
+                'slug'          => 'amiobank',
+                'logo'          => asset('images/partners/amio.svg'),
+                'contact_email' => 'info@amiobank.am',
+                'contact_phone' => '+37410592020',
+                'address_en'    => '0010, Nalbandyan 48 str., Yerevan',
+                'address_hy'    => 'ք․ Երևան, 0010, Նալբանդյան 48',
+                'url'           => 'https://www.amiobank.am/',
+            ],
+            [
+                'name_en'       => '"Mycredit" UCO LLC',
+                'name_hy'       => '«Մայկրեդիտ» ՈւՎԿ ՍՊԸ',
+                'slug'          => 'mycredit',
+                'logo'          => asset('images/partners/my_credit.svg'),
+                'contact_email' => 'info@mycredit.am',
+                'contact_phone' => '+37460601010',
+                'address_en'    => 'Amiryan 4/6, 136, Yerevan',
+                'address_hy'    => 'ՀՀ, ք․Երևան 0010, Ամիրյան 4/6, 136 տարածք',
+                'url'           => 'http://mycredit.am/',
+            ],
+            [
+                'name_en'       => '"Unibank" CJSC',
+                'name_hy'       => '«Յունիբանկ» ՓԲԸ',
+                'slug'          => 'unibank',
+                'logo'          => asset('images/partners/unibank.png'),
+                'contact_email' => 'unibank@unibank.am',
+                'contact_phone' => '+37410521320',
+                'address_en'    => 'Charents str. 58/1, Yerevan',
+                'address_hy'    => 'ք. Երևան, Չարենցի 12',
+                'url'           => 'https://prive.unibank.am/',
+            ],
+            [
+                'name_en'       => '"Norman Credit" UCO CJSC',
+                'name_hy'       => '«Նորման Կրեդիտ » ՈւՎԿ ՓԲԸ',
+                'slug'          => 'normancredit',
+                'logo'          => asset('images/partners/normal_credit.png'),
+                'contact_email' => 'info@normancredit.am',
+                'contact_phone' => '+37411999910',
+                'address_en'    => '0001, Sayat Nova 12, 3, Yerevan',
+                'address_hy'    => 'ք.Երևան 0001, Սայաթ-Նովա 12, տարածք 3',
+                'url'           => 'https://www.normancredit.am/',
+            ],
+            [
+                'name_en'       => '"Premium Credit" UCO CJSC',
+                'name_hy'       => '«Պրեմիում Կրեդիտ» ՈւՎԿ ՓԲԸ',
+                'slug'          => 'premiumcredit',
+                'logo'          => asset('images/partners/premium_credit.svg'),
+                'contact_email' => 'info@premiumcredit.am',
+                'contact_phone' => '+37411290000',
+                'address_en'    => 'Buzand str., 1/3, 1,2 Yerevan',
+                'address_hy'    => 'ք. Երևան, Բուզանդի փ. 1/3, շին. 1 և 2',
+                'url'           => 'https://www.premiumcredit.am/',
+            ],
+            [
+                'name_en'       => '"VTB Armenia Bank" CJSC',
+                'name_hy'       => '«ՎՏԲ-Հայաստան բանկ» ՓԲԸ',
+                'slug'          => 'vtb',
+                'logo'          => asset('images/partners/vtb_bank.svg'),
+                'contact_email' => 'headoffice@vtb.am',
+                'contact_phone' => '87-87',
+                'address_en'    => '0010, Moskovyan 35 str., Yerevan',
+                'address_hy'    => 'ք․ Երևան, 0010, Մոսկովյան փ. 35',
+                'url'           => 'https://www.vtb.am/',
+            ],
+            [
+                'name_en'       => '"Fast Bank" CJSC',
+                'name_hy'       => '«Ֆասթ Բանկ» ՓԲԸ',
+                'slug'          => 'fastbank',
+                'logo'          => asset('images/partners/fast_bank.svg'),
+                'contact_email' => 'info@fcc.am',
+                'contact_phone' => '+37410510000',
+                'address_en'    => '0047, Nork Marash, G. Hovsepyan 32/6 str., Yerevan',
+                'address_hy'    => 'ք․ Երևան, 0047, Նորք-Մարաշ, Գ.Հովսեփյան 32/6',
+                'url'           => 'https://www.fastbank.am/',
+            ],
+            [
+                'name_en'       => '"Farm Credit Armenia" UCO CC',
+                'name_hy'       => '«Ֆարմ Կրեդիտ Արմենիա » ՈւՎԿ ԱԿ',
+                'slug'          => 'farmcredit',
+                'logo'          => asset('images/partners/farm_credit.svg'),
+                'contact_email' => 'fca@fca.am',
+                'contact_phone' => '+37410550831',
+                'address_en'    => '9/16 Tbilisyan Highway, Arabkir, Yerevan',
+                'address_hy'    => 'Երևան, Արաբկիր, Թբիլիսյան խճուղի 9/16',
+                'url'           => 'https://www.fca.am/',
+            ],
+            [
+                'name_en'       => '"Finca" UCO CJSC',
+                'name_hy'       => '«Ֆինքա» ՈւՎԿ ՓԲԸ',
+                'slug'          => 'finca',
+                'logo'          => asset('images/partners/Finca.png'),
+                'contact_email' => 'info@finca.am',
+                'contact_phone' => '+37412555555',
+                'address_en'    => '0010, Agatangeghos str. 2a, Yerevan',
+                'address_hy'    => 'ք. Երեւան, 0023, Ագաթանգեղոսի 2ա',
+                'url'           => 'https://www.finca.am/',
+            ],
+
+        ];
+
+        foreach ($dataPartners as $dataPartner) {
+            $partner                = new Partner();
+            $partner->logo          = $dataPartner['logo'];
+            $partner->slug          = $dataPartner['slug'];
+            $partner->contact_email = $dataPartner['contact_email'];
+            $partner->contact_phone = $dataPartner['contact_phone'];
+            $partner->url           = $dataPartner['url'];
+            $partner->is_active     = true;
+            App::setLocale('hy');
+            $partner->name    = $dataPartner['name_hy'];
+            $partner->address = $dataPartner['address_hy'];
+            $partner->save();
+            App::setLocale('en');
+            $partner->name    = $dataPartner['name_en'];
+            $partner->address = $dataPartner['address_en'];
+            $partner->save();
+        }
+    }
+}
